@@ -1,9 +1,24 @@
 #Contao Modul-Entwicklung
 
-Ein Modul liegt in dem Verzeichnis /system/modules/(Modulname)
+Dies ist eine Art `learning by doing` dummy Modul. In allen Dateien sind Kommentare vorhanden, die wichtige Strukturen beschreiben und weiterhelfen. Fragen dazu könnt ihr gerne im [Forum](https://community.contao.org/de/) oder direkt bei mir stellen. Bitte beachtet das dieses Modul ein Dummy ist. Es ist wichtig dass ihr PHP beherrscht oder zumindest versteht um die Logik in Klassen zu verstehen und selbst zu entwickeln.
 
+- [Facebook](https://www.facebook.com/sioweb)
+- [Twitter](https://twitter.com/Sioweb)
+- [Webseite](http://www.sioweb.de)
+
+##Persönliche Anforderungen 
+
+- PHP >= 5.3 Kentnisse
+- SQL (MySqli)
+- XML, HTML, CSS, Javascript
+
+##Anmerkung
+
+Die meisten Funktionen, die man entwickeln will, gibt es schon in irgendeiner Form im Core bzw. in einem Modul. Ich selbst kopiere gerne die DCA-Elemente, Config.php oder eben Snippets die immer wieder vorkommen aus vorhandenen Elementen. Das Rad muss nicht jedes Mal neu erfunden werden (Auch wenn ich schon Module entwickelt habe die es so schon gab ._.)
 
 ##Verzeichnisse
+
+Ein Modul liegt in dem Verzeichnis /system/modules/(Modulname) und kann folgende Struktur enthalten.
 
 - assets
 - classes
