@@ -6,7 +6,7 @@ Dies ist eine Art `learning by doing` dummy Modul. In allen Dateien sind Komment
 - [Twitter](https://twitter.com/Sioweb)
 - [Webseite](http://www.sioweb.de)
 
-##Navi
+##Inhaltsverzeichnis
 
 - [Persönliche Anforderungen](#persönliche-anforderungen)
 - [Anmerkung](#anmerkung)
