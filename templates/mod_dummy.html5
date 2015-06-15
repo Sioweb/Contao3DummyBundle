@@ -1,0 +1,8 @@
+<?php $this->extend('block_unsearchable'); /* Lädt standardfelder wie Überschrift, Wrapper, etc… */ ?>
+<?php $this->block('content'); ?>
+
+<?php /* HTML goes here */?>
+
+<?php echo $this->dummy; /* Siehe /modules/ModuleDummy.php::compile(); */ ?>
+
+<?php $this->endblock(); ?>

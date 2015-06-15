@@ -1,0 +1,7 @@
+<?php
+/**
+ * In der config.php wird eine Klasse 'callback'=>'' oder 'key'=>'' definiert, in der 
+ * dieses Template mit new \BackendTemplate() geladen wird.
+ */
+
+echo $this->dummy;
