@@ -4,7 +4,7 @@
 * Contao Open Source CMS
 */
 
-namespace sioweb\contao\extensions\tl_dummy;
+namespace sioweb\contao\extensions\dummy;
 use Contao;
 
 /*
