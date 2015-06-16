@@ -103,7 +103,19 @@ if(Input::post('dummy_ajax_action') == 2)
 
 
 /**
- * Hooks die nicht dokumentiert sind
- * $GLOBALS['TL_HOOKS']['initializeSystem'] - Wird in der /system/initialize.php ausgeführt.
+ * Hooks die nicht dokumentiert sind (Ich prüfe später ob die wirklich nicht dokumentiert sind)
+ * - $GLOBALS['TL_HOOKS']['initializeSystem'] - Wird in der /system/initialize.php ausgeführt.
+ * - isAllowedToEditComment
+ * - modifyFrontendPage
+ * - compileDefinition
+ * - colorizeLogEntries
+ * - replaceDynamicScriptTags
+ * - postDownload
+ * - sqlCompileCommands
+ * - sqlGetFromDca
+ * - sqlGetFromFile
+ * - sqlGetFromDB
+ * - indexPage
+ * - postFlushData
  * Es folgen bald mehr…
  */
