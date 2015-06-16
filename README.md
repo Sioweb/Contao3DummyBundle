@@ -1,6 +1,6 @@
 #Contao Modul-Entwicklung
 
-Dies ist eine Art `learning by doing` dummy Modul. In allen Dateien sind Kommentare vorhanden, die wichtige Strukturen beschreiben und weiterhelfen. Fragen dazu könnt ihr gerne im [Forum](https://community.contao.org/de/) oder direkt bei mir stellen. Bitte beachtet das dieses Modul ein Dummy ist. Es ist wichtig dass ihr PHP beherrscht oder zumindest versteht um die Logik in Klassen zu verstehen und selbst zu entwickeln.
+Dies ist eine Art `learning by doing` dummy Modul. In allen Dateien sind Kommentare vorhanden, die wichtige Strukturen beschreiben und weiterhelfen. Fragen dazu könnt ihr gerne im [Forum](https://community.contao.org/de/) oder direkt bei mir stellen. Bitte beachtet das dieses Modul ein Dummy ist. Es ist wichtig dass ihr PHP beherrscht oder zumindest versteht um die Logik in Klassen zu verstehen und selbst zu entwickeln. [Mehr im Wiki](https://github.com/Sioweb/ContaoDummy/wiki)
 
 - [Facebook](https://www.facebook.com/sioweb)
 - [Twitter](https://twitter.com/Sioweb)
