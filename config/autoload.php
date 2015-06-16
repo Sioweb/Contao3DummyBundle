@@ -13,16 +13,14 @@
  */
 
 /* Namespace nach dem Muster firma\cms-name\extension\dummy */
-ClassLoader::addNamespaces(array
-(
+ClassLoader::addNamespaces(array(
     'sioweb\contao\extensions\dummy'
 ));
 /*
  * Namespace\Klassenname => Pfad/zum/Klassenname 
  * Die Klassen werden schönerweise in Modules / Widgets / Classes / Elements etc gruppiert
  */
-ClassLoader::addClasses(array
-(
+ClassLoader::addClasses(array(
     // classes
     'sioweb\contao\extensions\dummy\BackendDummy'     => 'system/modules/dummy/classes/BackendDummy.php',
     // models
@@ -33,10 +31,19 @@ ClassLoader::addClasses(array
     'sioweb\contao\extensions\dummy\ContentDummy'   => 'system/modules/dummy/elements/ContentDummy.php',
 ));
 
+/**
+ * Contao Klassen überschreiben, aber nur wenn ein bestimmter Parameter gesetzt wird
+ */
+if($_GET['dummy_param'] == 1) {
+    ClassLoader::addClasses(array(
+        // classes
+        'Template' => 'system/modules/dummy/library/sioweb/Template.php',
+    ));
+}
+
 
 /* Templatename => Pfad zu den Templates */
-TemplateLoader::addFiles(array
-(
+TemplateLoader::addFiles(array(
     'mod_dummy'   => 'system/modules/dummy/templates',
     'be_dummy'    => 'system/modules/dummy/templates/be',
 ));
