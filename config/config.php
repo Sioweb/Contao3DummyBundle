@@ -83,5 +83,5 @@ array_insert($GLOBALS['TL_CTE']['texts'],2,array (
  * Einige Hooks sind im Handbuch aufgelistet und erklärt - einige muss man selber finden.
  */
 if(TL_MODE == 'BE') {
-  $GLOBALS['TL_HOOKS']['loadDataContainer'][] = array('sioweb\contao\extensions\cache\SWCache', 'extendDCA');
+  $GLOBALS['TL_HOOKS']['loadDataContainer'][] = array('sioweb\contao\extensions\dummy\DummyClass', 'doSomething');
 }

@@ -22,7 +22,8 @@ ClassLoader::addNamespaces(array(
  */
 ClassLoader::addClasses(array(
     // classes
-    'sioweb\contao\extensions\dummy\BackendDummy'     => 'system/modules/dummy/classes/BackendDummy.php',
+    'sioweb\contao\extensions\dummy\BackendDummy'   => 'system/modules/dummy/classes/BackendDummy.php',
+    'sioweb\contao\extensions\dummy\DummyClass'     => 'system/modules/dummy/classes/DummyClass.php',
     // models
     'sioweb\contao\extensions\dummy\DummyModel'     => 'system/modules/dummy/models/DummyModel.php',
     // modules
