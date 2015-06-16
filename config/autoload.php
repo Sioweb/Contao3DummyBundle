@@ -45,6 +45,7 @@ if($_GET['dummy_param'] == 1) {
 
 /* Templatename => Pfad zu den Templates */
 TemplateLoader::addFiles(array(
-    'mod_dummy'   => 'system/modules/dummy/templates',
-    'be_dummy'    => 'system/modules/dummy/templates/be',
+    'mod_dummy'       => 'system/modules/dummy/templates',
+    'dummy_default'   => 'system/modules/dummy/templates',
+    'be_dummy'        => 'system/modules/dummy/templates/be',
 ));

@@ -86,6 +86,8 @@ if(TL_MODE == 'BE') {
   $GLOBALS['TL_HOOKS']['loadDataContainer'][] = array('sioweb\contao\extensions\dummy\DummyClass', 'doSomething');
 }
 
+
+
 /**
  * AJAX mit Hooks
  * Am einfachsten ist es die Erweiterung ajax / ajax.php zu verwenden
@@ -97,3 +99,11 @@ if(Input::post('dummy_ajax_action') == 1)
 
 if(Input::post('dummy_ajax_action') == 2) 
   $GLOBALS['TL_HOOKS']['dispatchAjax'][] = array('sioweb\contao\extensions\dummy\DummyClass', 'executeAnotherAjaxAction');
+
+
+
+/**
+ * Hooks die nicht dokumentiert sind
+ * $GLOBALS['TL_HOOKS']['initializeSystem'] - Wird in der /system/initialize.php ausgeführt.
+ * Es folgen bald mehr…
+ */
