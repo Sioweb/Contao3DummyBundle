@@ -37,6 +37,8 @@ Ein Modul liegt in dem Verzeichnis /system/modules/(Modulname) und kann folgende
 	- en
 - modules
 - elements
+- library
+  - foldername
 - models
 - widgets
 - templates
