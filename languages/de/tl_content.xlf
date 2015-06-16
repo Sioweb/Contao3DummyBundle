@@ -1,0 +1,14 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="system/modules/core/languages/en/tl_content.php" source-language="en">
+    <body>
+      <trans-unit id="tl_content.neues_feld.0">
+        <source>New Fieldname</source>
+        <target>Neues Feld</target>
+      </trans-unit>
+      <trans-unit id="tl_content.neues_feld.1">
+        <source>This will be added next to the field.</source>
+        <target>Dieser Text wird unter dem FEld ausgegeben.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
