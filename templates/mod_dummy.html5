@@ -1,4 +1,4 @@
-<?php $this->extend('block_unsearchable'); /* Lädt standardfelder wie Überschrift, Wrapper, etc… */ ?>
+<?php $this->extend('block_unsearchable'); /* Lädt Standardfelder wie Überschrift, Wrapper, etc… */ ?>
 <?php $this->block('content'); ?>
 
 <?php /* HTML goes here */?>
