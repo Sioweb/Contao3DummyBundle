@@ -15,6 +15,7 @@
 /* 
  * ASSETS laden
  * TL_MODE kann FE oder BE sein.
+ * Mit TL_MODE kann auch gesteuert werden, ob Hooks in (FE)Frontend oder (BE)Backend sein kann
  */
 if(TL_MODE == 'FE')
 	$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/dummy/assets/dummy.js';
@@ -67,7 +68,20 @@ array_insert($GLOBALS['TL_CTE'],2,array (
 
 
 
-/* Beispiel vorhandene KAtegorie erweitern */
+/* Beispiel vorhandene Kategorie erweitern */
 array_insert($GLOBALS['TL_CTE']['texts'],2,array (
 	'inhaltselement_id' => 'ContentDummy',
 ));
+
+
+
+
+
+/**
+ * Einen Hook nur registrieren, falls der User im Backend ist 
+ * Hooks können via 'TL_HOOK' in ganz Contao gefunden werden
+ * Einige Hooks sind im Handbuch aufgelistet und erklärt - einige muss man selber finden.
+ */
+if(TL_MODE == 'BE') {
+  $GLOBALS['TL_HOOKS']['loadDataContainer'][] = array('sioweb\contao\extensions\cache\SWCache', 'extendDCA');
+}
