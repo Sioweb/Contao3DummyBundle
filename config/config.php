@@ -89,6 +89,8 @@ if(TL_MODE == 'BE') {
 /**
  * AJAX mit Hooks
  * Am einfachsten ist es die Erweiterung ajax / ajax.php zu verwenden
+ * Das macht eure Seite potentiell angreifbar
+ * Die Erweiterung kann als API-Schnittstelle verwendet werden
  */
 if(Input::post('dummy_ajax_action') == 1) 
   $GLOBALS['TL_HOOKS']['dispatchAjax'][] = array('sioweb\contao\extensions\dummy\DummyClass', 'executeAjaxAction');
