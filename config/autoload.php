@@ -34,6 +34,7 @@ ClassLoader::addClasses(array(
 
 /**
  * Contao Klassen überschreiben, aber nur wenn ein bestimmter Parameter gesetzt wird
+ * Beispiel Erweiterung HtmlCache
  */
 if($_GET['dummy_param'] == 1) {
     ClassLoader::addClasses(array(
@@ -43,7 +44,12 @@ if($_GET['dummy_param'] == 1) {
 }
 
 
-/* Templatename => Pfad zu den Templates */
+/** 
+ * Templatename => Pfad zu den Templates 
+ * Je nachdem wie viele Templates es werden, macht es sinn einige
+ * in Unterverzeichnissen zu gruppieren. Die Core-Templates
+ * stellen ein gutes Beispiel dar.
+ */
 TemplateLoader::addFiles(array(
     'mod_dummy'       => 'system/modules/dummy/templates',
     'dummy_default'   => 'system/modules/dummy/templates',
