@@ -1,6 +1,6 @@
 <?php
 
-class ContentDummy extends \Content {
+class ContentDummy extends \ContentElement {
 
   protected $strTemplate = 'dummy_default';
   
