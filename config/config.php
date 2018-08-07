@@ -93,6 +93,8 @@ if(TL_MODE == 'BE') {
  * Am einfachsten ist es die Erweiterung ajax / ajax.php zu verwenden
  * Das macht eure Seite potentiell angreifbar
  * Die Erweiterung kann als API-Schnittstelle verwendet werden
+ * DummyClass benötigt dann die Funktion public function executeAjaxAction() {}
+ * Für reinen JSON-Output einfach die(json_encode(['foo'=>'bar'])); ausführen
  */
 if(Input::post('dummy_ajax_action') == 1) 
   $GLOBALS['TL_HOOKS']['dispatchAjax'][] = array('sioweb\contao\extensions\dummy\DummyClass', 'executeAjaxAction');
@@ -103,7 +105,7 @@ if(Input::post('dummy_ajax_action') == 2)
 
 
 /**
- * Hooks die nicht dokumentiert sind (Ich prüfe später ob die wirklich nicht dokumentiert sind)
+ * Weitere Hooks
  * - $GLOBALS['TL_HOOKS']['initializeSystem'] - Wird in der /system/initialize.php ausgeführt.
  * - isAllowedToEditComment
  * - modifyFrontendPage
